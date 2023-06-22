@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem5</title>
+</head>
+<body>
+    <script>
+        let num = 1;//it is initialised to 1, representing the starting number to check for divisibility.
+
+            function problem5(value){//function takes value as parameter and checks for divisibility
+                for(var i=1; i<=20; i++){//The loop iterates from 1 to 20
+                    if(value%i !== 0){//checks if value is not divisible by i using the the % operator
+                        return false;//if the value is not divisible  by i it returns false
+                    }
+                }
+                return true;//If the loop completes without finding any non-divisible number, it returns true.
+            }
+            while(true) {
+                if(problem5(num)){
+                        break;
+                    }
+                    num++;
+            }
+            console.log(num);
+    </script>
+</body>
+</html>
